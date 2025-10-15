@@ -9,7 +9,10 @@ path_to_file = "/Users/shawn/Documents/bootdev/bookbot/books/frankenstein.txt"
 
 def main():
     book_text = get_book_text()
-    print(book_text)
+    splitted = book_text.split()
+    counted = len(splitted)
+    print(f"Found {counted} total words.")    
+
 
 main()
 
